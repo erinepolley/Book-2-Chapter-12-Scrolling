@@ -14,8 +14,9 @@ window.addEventListener("scroll", function () {
         `window.scrollY`. No lower than 50px, though.
     */
 console.log("I'm scrolling!")
-audrey.scrollWidth = window.scrollY/3
-audrey.scrollHeight = window.scrollY
+let y = window.scrollY
+audrey.style.width = `${y}px`
+audrey.style.height = `${y}px`
 
     /*
         Adjust the height of audrey to be 1/4 the value of
